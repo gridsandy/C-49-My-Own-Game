@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body bgcolor="darkseagreen" text="white" onload="document.getElementById('mysound').play()">
+    <audio id="mysound" controls>
+        <source src="./assets/win.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <p align="center" id="title"><span style="font-size: 140px;">Congradulations</span><br>You Win</p>
+    <h3 align="center">Press space to play again</h3>
+    
+        
+
+    <script>
+        document.body.onkeypress = function (e) {
+            if (e.keyCode == 32) {
+                window.open('./game.html', '_self')
+            }
+        }
+    </script>
+</body>
+
+</html>
